@@ -1,11 +1,11 @@
 1、执行命令：
 mkdir mkdir /home/名称/ga
-cd /home/zhw/gga
+cd /home/名称/gga
 mkdir src
 cd src
 catkin_init_workspace 
 （把ga_tsp包拖入src中）
-cd /home/zhw/gga
+cd /home/名称/gga
 cakin_make
 source devel/setup.bash
 roslaunch ga_tsp ga_tsp.launch
