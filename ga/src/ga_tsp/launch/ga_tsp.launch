@@ -1,0 +1,30 @@
+<launch>
+    <node pkg="ga_tsp" type="ga_tsp_node" name="ga_tsp_node" output="screen">
+
+        <param name="city/num" value="5" type="int"/>
+        <param name="city/id_1" value="0" type="int"/>
+        <param name="city/pos_x_1" value="1" type="double"/>
+        <param name="city/pos_y_1" value="2" type="double"/>
+        <param name="city/id_2" value="1" type="int"/>
+        <param name="city/pos_x_2" value="-3" type="double"/>
+        <param name="city/pos_y_2" value="-4" type="double"/>
+        <param name="city/id_3" value="2" type="int"/>
+        <param name="city/pos_x_3" value="-2" type="double"/>
+        <param name="city/pos_y_3" value="4" type="double"/>
+        <param name="city/id_4" value="3" type="int"/>
+        <param name="city/pos_x_4" value="-2" type="double"/>
+        <param name="city/pos_y_4" value="-2" type="double"/>
+        <param name="city/id_5" value="4" type="int"/>
+        <param name="city/pos_x_5" value="2" type="double"/>
+        <param name="city/pos_y_5" value="-3" type="double"/>
+
+        <param name="population/num" value="10" type="int"/>
+        <param name="population/iter_num" value="10" type="int"/>
+        <param name="population/cross_probability" value="0.85" type="double"/>
+        <param name="population/mutation_probability" value="0.85" type="double"/>
+
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ga_tsp)/launch/test.rviz" required="true" />
+
+</launch>
